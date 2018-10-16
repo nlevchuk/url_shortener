@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #9B9B9B;
+}
+
+#root {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+header {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  font-size: 2em;
+  color: #F16534;
+  position: absolute;
+}
+
+header #logo {
+  margin: 0 0.4em;
+  font-weight: bold;
+  position: relative;
+  bottom: 4px;
+}
+
+header .angle {
+  height: 0.6em;
+  width: 0.6em;
+  border-top: 2px solid #F16534;
+  border-right: 2px solid #F16534;
+}
+
+header #left-angle {
+  transform: rotate(45deg);
+}
+
+header #right-angle {
+  transform: rotate(225deg);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main #container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.row {
+  width: 60vw;
+  height: 3em;
+}
+
+#form-container {
+  border: 2px solid #F16534;
+  border-radius: 5px;
+}
+
+#form-container form {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+#input-item {
+  display: flex;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+#input-item input {
+  border: none;
+  width: 100%;
+  font-size: 1em;
+  color: #F16534;
+}
+
+#button-item {
+  display: flex;
+  background-image: linear-gradient(-111deg, #F16534 4%, #ED3535 100%);
+}
+
+#button-item button {
+  background-image: linear-gradient(-111deg, #F16534 4%, #ED3535 100%);
+  border: none;
+  color: #ffffff;
+  width: 9em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+#link-container {
+  display: flex;
+  position: absolute;
+  top: 4.3em;
+}
+
+#link-container div {
+  margin-right: 10px;
+}
+
+#link-container a {
+  color: #F16534;
+}
+
+#link-container span {
+  color: #9B9B9B;
+}
