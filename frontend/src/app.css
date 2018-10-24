@@ -76,12 +76,8 @@ main #container {
 #form-container {
   border: 2px solid #F16534;
   border-radius: 5px;
-}
-
-#form-container form {
   display: flex;
   flex-direction: row;
-  height: 100%;
 }
 
 #input-item {
@@ -95,6 +91,13 @@ main #container {
   width: 100%;
   font-size: 1em;
   color: #F16534;
+}
+
+#input-item #reset-button {
+  color: #F16534;
+  cursor: pointer;
+  border: none;
+  font-size: 1em;
 }
 
 #button-item {
@@ -114,20 +117,20 @@ main #container {
   border-bottom-right-radius: 2px;
 }
 
-#link-container {
+#original-link {
   display: flex;
   position: absolute;
   top: 4.3em;
 }
 
-#link-container div {
+#original-link div {
   margin-right: 10px;
 }
 
-#link-container a {
+#original-link a {
   color: #F16534;
 }
 
-#link-container span {
+#original-link span {
   color: #9B9B9B;
 }

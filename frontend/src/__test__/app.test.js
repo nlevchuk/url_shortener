@@ -1,10 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import App from '../app';
 
-describe('Test', () => {
-  it('test 1', () => {
-    /*assert.equal(1, 1);*/
-    //expect(1).to.be.equal(1);
+describe('<App />', () => {
+  it('should use HeaderBox and MainBox', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper).toMatchSnapshot();
   });
 });

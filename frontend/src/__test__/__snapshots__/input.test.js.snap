@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> should set onChange event 1`] = `
+<input
+  onChange={[Function]}
+  placeholder="Paste URL here"
+  type="text"
+  value="https://heroku.com"
+/>
+`;
+
+exports[`<Input /> should set readOnly input 1`] = `
+<input
+  placeholder="Paste URL here"
+  readOnly={true}
+  type="text"
+  value="https://heroku.com"
+/>
+`;

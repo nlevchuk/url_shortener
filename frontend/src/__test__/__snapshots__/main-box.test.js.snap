@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MainBox /> should render correctly 1`] = `
+<MainBox>
+  <main>
+    <div
+      id="container"
+    >
+      <div
+        className="row"
+        id="form-container"
+      >
+        <div
+          id="input-item"
+        >
+          <Input
+            onChange={[Function]}
+            readOnly={false}
+            url=""
+          >
+            <input
+              onChange={[Function]}
+              placeholder="Paste URL here"
+              type="text"
+              value=""
+            />
+          </Input>
+        </div>
+        <div
+          id="button-item"
+        >
+          <ShortenButton
+            onClick={[Function]}
+          >
+            <Button
+              onClick={[Function]}
+              value="SHORTEN"
+            >
+              <button
+                onClick={[Function]}
+              >
+                SHORTEN
+              </button>
+            </Button>
+          </ShortenButton>
+        </div>
+      </div>
+    </div>
+  </main>
+</MainBox>
+`;
+
+exports[`<MainBox /> should render correctly 2`] = `
+<MainBox>
+  <main>
+    <div
+      id="container"
+    >
+      <div
+        className="row"
+        id="form-container"
+      >
+        <div
+          id="input-item"
+        >
+          <Input
+            onChange={[Function]}
+            readOnly={true}
+            url="blahblah"
+          >
+            <input
+              placeholder="Paste URL here"
+              readOnly={true}
+              type="text"
+              value="blahblah"
+            />
+          </Input>
+          <ResetButton
+            onClick={[Function]}
+          >
+            <Button
+              id="reset-button"
+              onClick={[Function]}
+              value="X"
+            >
+              <button
+                id="reset-button"
+                onClick={[Function]}
+              >
+                X
+              </button>
+            </Button>
+          </ResetButton>
+        </div>
+        <div
+          id="button-item"
+        >
+          <CopyButton
+            onClick={[Function]}
+          >
+            <Button
+              onClick={[Function]}
+              value="COPY"
+            >
+              <button
+                onClick={[Function]}
+              >
+                COPY
+              </button>
+            </Button>
+          </CopyButton>
+        </div>
+      </div>
+      <OriginalLink
+        href="https://heroku.com"
+      >
+        <div
+          className="row"
+          id="original-link"
+        >
+          <div>
+            <a
+              href="https://heroku.com"
+            >
+              https://heroku.com
+            </a>
+          </div>
+          <span>
+            shortening
+          </span>
+        </div>
+      </OriginalLink>
+    </div>
+  </main>
+</MainBox>
+`;

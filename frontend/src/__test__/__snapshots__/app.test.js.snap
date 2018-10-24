@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should use HeaderBox and MainBox 1`] = `
+<div
+  className="app"
+>
+  <HeaderBox />
+  <MainBox />
+</div>
+`;

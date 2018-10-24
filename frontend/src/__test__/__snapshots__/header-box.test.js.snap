@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeaderBox /> should render correctly 1`] = `
+<header>
+  <div
+    className="angle"
+    id="left-angle"
+  />
+  <div
+    id="logo"
+  >
+    shortencrafts.io
+  </div>
+  <div
+    className="angle"
+    id="right-angle"
+  />
+</header>
+`;
