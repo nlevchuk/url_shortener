@@ -5,7 +5,7 @@ class HeaderBox extends Component {
     return(
       <header>
         <div id="left-angle" className="angle"></div>
-        <div id="logo">shortencrafts.io</div>
+        <div id="logo">Url shortener</div>
         <div id="right-angle" className="angle"></div>
       </header>
     );

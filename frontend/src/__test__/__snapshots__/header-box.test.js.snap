@@ -9,7 +9,7 @@ exports[`<HeaderBox /> should render correctly 1`] = `
   <div
     id="logo"
   >
-    shortencrafts.io
+    Url shortener
   </div>
   <div
     className="angle"
