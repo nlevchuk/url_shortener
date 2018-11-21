@@ -1,3 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api do
+    namespace :v1 do
+      namespace :admin do
+        get :urls, to: 'urls#index'
+      end
+      post 'short-urls', to: 'short_urls#create'
+    end
+  end
+
+  get ':url', to: 'redirects#show'
 end

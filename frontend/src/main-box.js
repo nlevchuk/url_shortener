@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Input from './input';
 import { ShortenButton, CopyButton, ResetButton } from './buttons';
+import { isUrlValid, prepareUrl } from './urls';
+import { fetchShortUrl } from './requests';
 
 class OriginalLink extends Component {
   render() {
@@ -33,20 +35,24 @@ class MainBox extends Component {
     };
   }
 
-  shortUrl() {
-    const originalUrl = this.state.url;
-    if (originalUrl === '') {
-      alert('Paste URL!');
+  async shortUrl() {
+    const originalUrl = prepareUrl(this.state.url);
+    if (!isUrlValid(originalUrl)) {
+      alert('Invalid URL!');
       return;
     }
-
-    // send to server JSON and fetch response
-    const newUrl = 'blahblah';
-    this.setState({
-      isShortend: true,
-      originalUrl: originalUrl,
-      url: newUrl,
-    });
+    try {
+      const data = await fetchShortUrl('/api/v1/short-urls',
+                                       { original_url: originalUrl });
+      this.setState({
+        isShortend: true,
+        originalUrl: originalUrl,
+        url: data['short_url'],
+      });
+    } catch(err) {
+      console.log(err);
+      alert('Something went wrong! Try again later.');
+    }
   }
 
   copyUrl() {
